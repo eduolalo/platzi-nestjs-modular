@@ -5,12 +5,13 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(
     @Inject('API_KEY') private apiKey: string,
+    @Inject('TASKS') private tasks: any[],
     private readonly appService: AppService,
   ) {}
 
   @Get()
   getHello(): string {
-    return `Hola mundo! ${this.apiKey}`;
+    return `Api key: ${this.apiKey} \n tareas: ${this.tasks}}`;
   }
 
   @Get('nuevo')
