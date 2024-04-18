@@ -75,6 +75,7 @@
     "testEnvironment": "node"
   },
   "engines": {
-    "node": "14.x"
+    "node": "20.x",
+    "bun": "1.x"
   }
 }
